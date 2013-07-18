@@ -9,8 +9,6 @@ public class Turtle {
 	
 	private Graphics2D g2D;
 	
-	private LSystem system;
-	
 	private String program;
 	
 	private Stack<TurtleInfo> turtleStack;
@@ -20,12 +18,13 @@ public class Turtle {
 	private double rotateAngle;
 	
 	/**
+	 * Creates a turtle object able to execute and L-System and draw it on a
+	 * 2D Graphics environment.
 	 * 
-	 * @param turtleInfo
+	 * @param turtleInfo the original position and orientation of the turtle
 	 */
 	public Turtle(TurtleInfo turtleInfo, LSystem system) {
 		this.turtleInfo = turtleInfo;
-		this.system = system;
 		
 		/* Generate the commands to be executed by the Turtle
 		 * and set up the parameters. 
@@ -57,8 +56,9 @@ public class Turtle {
 	}
 	
 	/**
+	 * The turtle rotates either left or right depending on the sign of the angle.
 	 * 
-	 * @param angle
+	 * @param angle the angle the turtle should rotate by
 	 */
 	public void rotate(double angle) {
 		turtleInfo.setAngle(turtleInfo.getAngle() - angle);

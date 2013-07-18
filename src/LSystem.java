@@ -140,7 +140,7 @@ public class LSystem {
 	
 	/**
 	 * 
-	 * @return
+	 * @return the distance to move at each step.
 	 */
 	public double getDistance() {
 		return distance;
@@ -148,7 +148,7 @@ public class LSystem {
 	
 	/**
 	 * 
-	 * @return
+	 * @return the angle to rotate by at every rotation.
 	 */
 	public double getRotateAngle() {
 		return rotateAngle;
