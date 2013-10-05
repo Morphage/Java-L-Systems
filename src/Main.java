@@ -17,7 +17,7 @@ public class Main {
 		    	JFrame frame = new JFrame("Java L-Systems");
 		    	
 		    	/* Load up an L-System from a file. */
-		    	LSystem system = new LSystem("tree.txt");
+		    	LSystem system = new LSystem("lsystems/tree.txt");
 		    	
 		    	/* Create a turtle and supply it with the L-System
 		    	 * a starting position and orientation. 
